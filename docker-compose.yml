@@ -1,0 +1,11 @@
+version: '3.3'
+services: 
+  backend:
+    image: oat431/action_backend:latest
+    ports: 
+      - "8082:8080"
+  frontend:
+    image: oat431/action_frontend:latest
+    ports: 
+      - "8081:4200"
+      - "9999:80"
